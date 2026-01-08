@@ -81,7 +81,7 @@ export default function Brand() {
               Brand Identity
             </Typography>
             <Typography variant="h3" color="secondary" className="max-w-3xl mx-auto">
-              Every element of NitroSense's brand reflects our commitment to clinical excellence, 
+              Every element of NitroSense&apos;s brand reflects our commitment to clinical excellence, 
               human empathy, and technological precision.
             </Typography>
           </motion.div>
@@ -297,13 +297,13 @@ export default function Brand() {
               </Typography>
               <Typography variant="body" className="text-lg text-center leading-relaxed max-w-4xl mx-auto">
                 NitroSense transforms the anxiety of living with asthma into the confidence of predictive health management. 
-                We don't just monitor—we protect. We don't just alert—we prevent. We don't just treat patients—we empower people 
+                We don&apos;t just monitor—we protect. We don&apos;t just alert—we prevent. We don&apos;t just treat patients—we empower people 
                 to live their fullest lives, breathing freely with the knowledge that advanced science is quietly watching over them.
               </Typography>
               
               <div className="mt-8 text-center">
                 <Typography variant="h3" className="text-nitro-green italic">
-                  "Breathe freely. Live fully. We've got you covered."
+                  "                  &ldquo;Breathe freely. Live fully. We&apos;ve got you covered.&rdquo;"
                 </Typography>
               </div>
             </div>

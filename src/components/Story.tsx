@@ -86,8 +86,8 @@ export default function Story() {
               Our Vision
             </Typography>
             <Typography variant="body" className="text-lg leading-relaxed mb-8">
-              We envision a future where asthma attacks become increasingly rare—not because we've cured asthma, 
-              but because we've made them predictable and preventable. A future where children can play freely, 
+              We envision a future where asthma attacks become increasingly rare—not because we&apos;ve cured asthma, 
+              but because we&apos;ve made them predictable and preventable. A future where children can play freely, 
               adults can exercise confidently, and families can sleep peacefully, knowing that advanced AI is 
               quietly watching over their respiratory health.
             </Typography>
@@ -150,7 +150,7 @@ export default function Story() {
               This is about more than technology
             </Typography>
             <Typography variant="body" className="text-lg leading-relaxed">
-              It's about the parent who can finally sleep through the night. The athlete who can push their limits 
+              It&apos;s about the parent who can finally sleep through the night. The athlete who can push their limits 
               without fear. The child who never has to miss another birthday party. The teacher who can focus on 
               education instead of emergency inhalers. This is about giving people their lives back.
             </Typography>

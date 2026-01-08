@@ -120,7 +120,7 @@ export default function Impact() {
               Impact & Feasibility
             </Typography>
             <Typography variant="h3" color="secondary" className="max-w-3xl mx-auto">
-              NitroSense isn't just technically possible—it's urgently needed and ready to deploy today.
+              NitroSense isn&apos;t just technically possible—it&apos;s urgently needed and ready to deploy today.
             </Typography>
           </motion.div>
 
@@ -185,7 +185,7 @@ export default function Impact() {
                   {/* Quote */}
                   <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                     <div className="bg-nitro-black/50 p-8 rounded-xl border border-nitro-green/20">
-                      <div className="text-4xl text-nitro-green mb-4">"</div>
+                      <div className="text-4xl text-nitro-green mb-4">&ldquo;</div>
                       <Typography variant="body" className="text-lg italic mb-4 leading-relaxed">
                         {beneficiary.quote}
                       </Typography>
@@ -212,7 +212,7 @@ export default function Impact() {
                 The Power of Early Detection
               </Typography>
               <Typography variant="body" color="secondary" className="max-w-3xl mx-auto">
-                Every minute matters in asthma care. Early detection doesn't just improve outcomes—it saves lives.
+                Every minute matters in asthma care. Early detection doesn&apos;t just improve outcomes—it saves lives.
               </Typography>
             </div>
 
