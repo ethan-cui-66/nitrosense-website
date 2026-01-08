@@ -1,0 +1,37 @@
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: 'NitroSense - Predictive Respiratory Monitoring',
+  description: 'Prevent asthma attacks before they happen through continuous, predictive respiratory monitoring.',
+  robots: 'noindex, nofollow', // Competition privacy
+  keywords: ['respiratory monitoring', 'asthma prevention', 'medical innovation', 'predictive healthcare'],
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#10B981', // nitro-green
+  colorScheme: 'dark',
+  authors: [{ name: 'NitroSense Team' }],
+  creator: 'NitroSense',
+  publisher: 'NitroSense',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" className="dark">
+      <body className={`${inter.className} bg-nitro-black text-nitro-text antialiased`}>
+        {children}
+      </body>
+    </html>
+  )
+}
