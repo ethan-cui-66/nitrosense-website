@@ -29,6 +29,11 @@ yarn-error.log*
 
 # Local env files
 .env*.local
+.env
+.env.production
+
+# But keep .npmrc for deployment
+!.npmrc
 
 # Vercel
 .vercel
