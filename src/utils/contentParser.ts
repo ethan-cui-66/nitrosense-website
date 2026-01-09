@@ -202,7 +202,7 @@ export class ContentParser {
       }
     })
 
-    return [...new Set(placeholders)] // Remove duplicates
+    return Array.from(new Set(placeholders)) // Remove duplicates
   }
 
   /**
