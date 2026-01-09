@@ -13,7 +13,7 @@
     "test:coverage": "jest --coverage --passWithNoTests",
     "test:ci": "jest --ci --coverage --watchAll=false --passWithNoTests",
     "clean": "rm -rf .next out node_modules/.cache",
-    "deploy": "npm run clean && npm run build"
+    "deploy": "npm run build"
   },
   "dependencies": {
     "next": "^14.2.35",
@@ -36,10 +36,6 @@
     "@testing-library/react": "^14.1.2",
     "@testing-library/jest-dom": "^6.1.5",
     "fast-check": "^3.15.0"
-  },
-  "engines": {
-    "node": ">=18.17.0",
-    "npm": ">=9.0.0"
   },
   "browserslist": {
     "production": [

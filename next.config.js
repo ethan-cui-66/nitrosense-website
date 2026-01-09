@@ -15,8 +15,6 @@ const nextConfig = {
   images: {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
-    dangerouslyAllowSVG: false,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   
   // Compiler options
@@ -46,38 +44,10 @@ const nextConfig = {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=()',
           },
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on',
-          },
         ],
       },
     ]
   },
-  
-  // Webpack optimization
-  webpack: (config, { dev, isServer }) => {
-    // Optimize bundle size
-    if (!dev && !isServer) {
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          default: false,
-          vendors: false,
-          vendor: {
-            name: 'vendor',
-            chunks: 'all',
-            test: /node_modules/,
-          },
-        },
-      }
-    }
-    
-    return config
-  },
-  
-  // Output configuration
-  output: 'standalone',
 }
 
 module.exports = nextConfig

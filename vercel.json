@@ -1,68 +1,8 @@
 {
-  "version": 2,
   "framework": "nextjs",
-  "buildCommand": "npm run deploy",
-  "outputDirectory": ".next",
-  "installCommand": "npm ci --prefer-offline --no-audit --no-fund",
-  "devCommand": "npm run dev",
-  "regions": ["iad1"],
-  "functions": {
-    "app/**/*.tsx": {
-      "maxDuration": 10
-    },
-    "src/**/*.tsx": {
-      "maxDuration": 10
-    }
-  },
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "X-DNS-Prefetch-Control",
-          "value": "on"
-        },
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=31536000; includeSubDomains"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)\\.(js|css|woff|woff2|ttf|eot|ico|png|jpg|jpeg|gif|svg|webp|avif)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/robots.txt",
-      "destination": "/api/robots"
-    }
-  ],
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
   "env": {
-    "NEXT_TELEMETRY_DISABLED": "1",
-    "NODE_ENV": "production"
-  },
-  "build": {
-    "env": {
-      "NEXT_TELEMETRY_DISABLED": "1"
-    }
+    "NEXT_TELEMETRY_DISABLED": "1"
   }
 }
