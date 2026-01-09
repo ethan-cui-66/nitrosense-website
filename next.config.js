@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Disable telemetry completely
-  telemetry: {
-    disabled: true,
-  },
-  
   // Optimize for production
   compress: true,
   poweredByHeader: false,
