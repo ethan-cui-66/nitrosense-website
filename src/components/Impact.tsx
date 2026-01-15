@@ -149,8 +149,7 @@ export default function Impact() {
                 >
                   {/* Benefits List */}
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                    <div className="flex items-center mb-6">
-                      <div className="text-4xl mr-4">{beneficiary.icon}</div>
+                    <div className="mb-6">
                       <Typography variant="h2" className="text-nitro-green">
                         {beneficiary.title}
                       </Typography>
@@ -308,21 +307,18 @@ export default function Impact() {
                     viewport={{ once: true }}
                     className="bg-nitro-black/30 p-6 rounded-xl border border-nitro-green/20"
                   >
-                    <div className="flex items-start space-x-4">
-                      <div className="text-3xl">{factor.icon}</div>
-                      <div className="flex-1">
-                        <Typography variant="h4" className="mb-2 text-nitro-green">
-                          {factor.title}
+                    <div>
+                      <Typography variant="h4" className="mb-2 text-nitro-green">
+                        {factor.title}
+                      </Typography>
+                      <Typography variant="body" color="secondary" className="mb-3">
+                        {factor.description}
+                      </Typography>
+                      <div className="inline-flex items-center px-3 py-1 bg-nitro-green/20 rounded-full">
+                        <div className="w-2 h-2 bg-nitro-green rounded-full mr-2"></div>
+                        <Typography variant="small" className="text-nitro-green font-medium">
+                          {factor.status}
                         </Typography>
-                        <Typography variant="body" color="secondary" className="mb-3">
-                          {factor.description}
-                        </Typography>
-                        <div className="inline-flex items-center px-3 py-1 bg-nitro-green/20 rounded-full">
-                          <div className="w-2 h-2 bg-nitro-green rounded-full mr-2"></div>
-                          <Typography variant="small" className="text-nitro-green font-medium">
-                            {factor.status}
-                          </Typography>
-                        </div>
                       </div>
                     </div>
                   </motion.div>

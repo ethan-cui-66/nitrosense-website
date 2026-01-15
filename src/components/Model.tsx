@@ -51,7 +51,6 @@ export default function Model() {
                     }
                   `}
                 >
-                  <span className="mr-2">{view.icon}</span>
                   {view.label}
                 </button>
               ))}
@@ -200,21 +199,18 @@ function SensorStoneVisualization() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-nitro-charcoal/50 p-6 rounded-lg border border-nitro-green/10"
             >
-              <div className="flex items-start space-x-4">
-                <div className="text-2xl">{measurement.icon}</div>
-                <div className="flex-1">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <TechnicalText className={measurement.color}>
-                      {measurement.name}
-                    </TechnicalText>
-                    <Typography variant="small" color="secondary">
-                      ({measurement.fullName})
-                    </Typography>
-                  </div>
-                  <Typography variant="body" color="secondary">
-                    {measurement.description}
+              <div>
+                <div className="flex items-center space-x-2 mb-2">
+                  <TechnicalText className={measurement.color}>
+                    {measurement.name}
+                  </TechnicalText>
+                  <Typography variant="small" color="secondary">
+                    ({measurement.fullName})
                   </Typography>
                 </div>
+                <Typography variant="body" color="secondary">
+                  {measurement.description}
+                </Typography>
               </div>
             </motion.div>
           ))}

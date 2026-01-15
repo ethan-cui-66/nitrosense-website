@@ -125,7 +125,6 @@ export default function Story() {
                 viewport={{ once: true }}
                 className="bg-nitro-black/30 p-8 rounded-xl border border-nitro-green/10 hover:border-nitro-green/20 transition-colors"
               >
-                <div className="text-4xl mb-4">{value.icon}</div>
                 <Typography variant="h3" className="mb-4 text-nitro-green">
                   {value.title}
                 </Typography>

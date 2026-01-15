@@ -94,7 +94,6 @@ export default function WearableMounts() {
                 whileTap={{ scale: 0.98 }}
               >
                 <div className="flex items-center space-x-4">
-                  <div className="text-3xl">{mount.icon}</div>
                   <div className="flex-1">
                     <Typography variant="h4" className={selectedMount === mount.id ? 'text-nitro-green' : ''}>
                       {mount.name}
