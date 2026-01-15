@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'NitroSense - Predictive Respiratory Monitoring',
-  description: 'Prevent asthma attacks before they happen through continuous, predictive respiratory monitoring.',
+  title: 'AirlyWarning',
+  description: '"Your body warns you twice. We listen both times."',
   robots: 'noindex, nofollow', // Competition privacy
   keywords: ['respiratory monitoring', 'asthma prevention', 'medical innovation', 'predictive healthcare'],
   viewport: 'width=device-width, initial-scale=1',

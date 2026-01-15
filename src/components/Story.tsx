@@ -9,22 +9,22 @@ const values = [
   {
     title: 'Preventative Medicine',
     description: 'We believe healthcare should prevent problems before they occur, not just treat them after. Our technology shifts the paradigm from reactive emergency care to proactive health management.',
-    icon: '🛡️',
+    
   },
   {
     title: 'Accessibility',
     description: 'Advanced respiratory monitoring should be available to everyone, not just those in specialized medical facilities. We design for universal access and ease of use.',
-    icon: '🌍',
+    
   },
   {
     title: 'Scientific Transparency',
     description: 'Every algorithm, every measurement, every prediction is grounded in peer-reviewed science. We share our methodologies openly and invite scrutiny from the medical community.',
-    icon: '🔬',
+    
   },
   {
     title: 'Patient Empowerment',
     description: 'Patients and their families deserve to understand and control their health data. We put the power of prediction directly into the hands of those who need it most.',
-    icon: '💪',
+    
   },
 ]
 

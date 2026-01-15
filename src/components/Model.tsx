@@ -12,9 +12,9 @@ export default function Model() {
   const [activeView, setActiveView] = useState<'sensor' | 'mounts' | 'ecosystem'>('sensor')
 
   const views = [
-    { id: 'sensor', label: 'Sensor Technology', icon: '🔬' },
-    { id: 'mounts', label: 'Wearable Options', icon: '⌚' },
-    { id: 'ecosystem', label: 'App Ecosystem', icon: '📱' },
+    { id: 'sensor', label: 'Sensor Technology'},
+    { id: 'mounts', label: 'Wearable Options'},
+    { id: 'ecosystem', label: 'App Ecosystem'},
   ]
 
   return (
@@ -117,7 +117,7 @@ export default function Model() {
             <Grid cols={2} gap="lg" className="max-w-4xl mx-auto">
               <div className="bg-nitro-red/10 p-8 rounded-xl border border-nitro-red/20">
                 <Typography variant="h3" className="mb-4 text-nitro-red">
-                  ❌ Traditional Approach
+                  Traditional Approach
                 </Typography>
                 <ul className="space-y-3 text-nitro-text-secondary">
                   <li>• Wait for symptoms to appear</li>
@@ -130,7 +130,7 @@ export default function Model() {
 
               <div className="bg-nitro-green/10 p-8 rounded-xl border border-nitro-green/20">
                 <Typography variant="h3" className="mb-4 text-nitro-green">
-                  ✅ NitroSense Approach
+                  NitroSense Approach
                 </Typography>
                 <ul className="space-y-3 text-nitro-text-secondary">
                   <li>• Continuous biomarker monitoring</li>
@@ -156,21 +156,21 @@ function SensorStoneVisualization() {
       fullName: 'Fractional Exhaled Nitric Oxide',
       description: 'Measures airway inflammation levels in real-time',
       color: 'text-nitro-green',
-      icon: '🫁',
+      
     },
     {
       name: 'VOCs',
       fullName: 'Volatile Organic Compounds',
       description: 'Detects chemical signatures of respiratory stress',
       color: 'text-nitro-yellow',
-      icon: '🧪',
+      
     },
     {
       name: 'Inflammation Signals',
       fullName: 'Inflammatory Biomarkers',
       description: 'Identifies early warning signs of asthma triggers',
       color: 'text-nitro-red',
-      icon: '⚡',
+      
     },
   ]
 
@@ -222,7 +222,7 @@ function SensorStoneVisualization() {
 
         <div className="mt-8 p-6 bg-nitro-green/5 rounded-lg border border-nitro-green/20">
           <Typography variant="body" className="text-nitro-green font-medium">
-            💡 The key insight: These biomarkers change 15-30 minutes before traditional symptoms appear, 
+            The key insight: These biomarkers change 15-30 minutes before traditional symptoms appear, 
             giving you precious time to take preventive action.
           </Typography>
         </div>

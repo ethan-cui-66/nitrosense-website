@@ -11,56 +11,56 @@ const colorMeanings = [
     name: 'Medical Green',
     hex: colors.green,
     meaning: 'Health, Growth, Prevention',
-    usage: 'Primary brand color, represents the life-giving nature of breath and the growth toward better health',
-    medicalSignificance: 'Associated with healing, safety, and positive medical outcomes'
+    usage: 'Primary brand color',
+    medicalSignificance: 'Healing and safety'
   },
   {
     name: 'Charcoal Black',
     hex: colors.black,
-    meaning: 'Precision, Technology, Depth',
-    usage: 'Primary background, conveys the sophisticated technology and clinical precision',
-    medicalSignificance: 'Professional medical equipment aesthetic, serious and trustworthy'
+    meaning: 'Precision, Technology',
+    usage: 'Primary background',
+    medicalSignificance: 'Professional and trustworthy'
   },
   {
     name: 'Caution Yellow',
     hex: colors.yellow,
-    meaning: 'Warning, Attention, Awareness',
-    usage: 'Alert states and important notifications that require user attention',
-    medicalSignificance: 'Universal warning color in medical contexts, promotes immediate attention'
+    meaning: 'Warning, Attention',
+    usage: 'Alert states',
+    medicalSignificance: 'Immediate attention'
   },
   {
     name: 'Critical Red',
     hex: colors.red,
-    meaning: 'Urgency, Critical States, Action',
-    usage: 'High-priority alerts and critical health status indicators',
-    medicalSignificance: 'Emergency medical color, indicates immediate action required'
+    meaning: 'Urgency, Critical',
+    usage: 'High-priority alerts',
+    medicalSignificance: 'Emergency action required'
   }
 ]
 
 const brandVoiceAttributes = [
   {
     attribute: 'Calm',
-    description: 'We speak with the reassuring confidence of a trusted medical professional',
+    description: 'Reassuring confidence of a trusted medical professional',
     example: '"Your breathing patterns show normal variation today."',
-    avoid: 'Panic-inducing language, alarmist tone, unnecessary urgency'
+    avoid: 'Panic-inducing language'
   },
   {
     attribute: 'Medical',
-    description: 'We use precise, clinical terminology while remaining accessible',
+    description: 'Precise, clinical terminology while remaining accessible',
     example: '"FeNO levels indicate reduced airway inflammation."',
-    avoid: 'Overly casual language, medical jargon without explanation'
+    avoid: 'Overly casual language'
   },
   {
     attribute: 'Reassuring',
-    description: 'We provide comfort and confidence in uncertain health situations',
+    description: 'Comfort and confidence in uncertain health situations',
     example: '"We\'re monitoring your respiratory health around the clock."',
-    avoid: 'Dismissive language, false promises, overconfident claims'
+    avoid: 'Dismissive language'
   },
   {
     attribute: 'Precise',
-    description: 'We communicate with scientific accuracy and measurable specificity',
+    description: 'Scientific accuracy and measurable specificity',
     example: '"15-minute early warning with 94% accuracy in clinical trials."',
-    avoid: 'Vague claims, unmeasurable benefits, hyperbolic language'
+    avoid: 'Vague claims'
   }
 ]
 
@@ -78,11 +78,7 @@ export default function Brand() {
             className="text-center mb-16"
           >
             <Typography variant="h1" className="mb-6">
-              Brand Identity
-            </Typography>
-            <Typography variant="h3" color="secondary" className="max-w-3xl mx-auto">
-              Every element of NitroSense&apos;s brand reflects our commitment to clinical excellence, 
-              human empathy, and technological precision.
+              Brand
             </Typography>
           </motion.div>
 
@@ -96,10 +92,7 @@ export default function Brand() {
           >
             <div className="text-center mb-12">
               <Typography variant="h2" className="mb-4">
-                The Name: NitroSense
-              </Typography>
-              <Typography variant="body" color="secondary" className="max-w-2xl mx-auto">
-                Our name reflects the scientific precision and sensory intelligence at the heart of our technology.
+                NitroSense
               </Typography>
             </div>
 
@@ -111,9 +104,8 @@ export default function Brand() {
                       <TechnicalText>Nitro</TechnicalText>
                     </Typography>
                     <Typography variant="body" color="secondary" className="leading-relaxed">
-                      References <strong>Nitric Oxide (NO)</strong>, the key biomarker we measure in exhaled breath. 
-                      FeNO (Fractional exhaled Nitric Oxide) is a clinically validated indicator of airway inflammation 
-                      and a critical predictor of asthma attacks.
+                      Nitric Oxide (NO) - the key biomarker we measure. FeNO indicates airway inflammation 
+                      and predicts asthma attacks.
                     </Typography>
                   </div>
                   
@@ -122,8 +114,7 @@ export default function Brand() {
                       <TechnicalText>Sense</TechnicalText>
                     </Typography>
                     <Typography variant="body" color="secondary" className="leading-relaxed">
-                      Represents our advanced <strong>sensing technology</strong> and the <strong>intuitive insights</strong> 
-                      we provide. It also evokes the human sense of security and awareness that comes from predictive monitoring.
+                      Advanced sensing technology and intuitive insights. Security and awareness from predictive monitoring.
                     </Typography>
                   </div>
                 </div>

@@ -21,44 +21,16 @@ export default function Hero() {
             <BreathRing />
           </motion.div>
 
-          {/* Main Introduction */}
+          {/* Main Message - Clean and Minimal */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mb-8"
-          >
-            <Typography variant="hero" className="mb-6 leading-tight">
-              NitroSense prevents asthma attacks before they happen through continuous, predictive respiratory monitoring.
-            </Typography>
-          </motion.div>
-
-          {/* Core Mission Statement */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="mb-12"
-          >
-            <Typography variant="h2" color="secondary" className="max-w-3xl mx-auto">
-              Revolutionary wearable technology that transforms reactive asthma care into proactive health management, 
-              giving patients and caregivers the power to prevent attacks rather than just respond to them.
-            </Typography>
-          </motion.div>
-
-          {/* Call to Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
             className="mb-16"
           >
-            <div className="inline-flex items-center px-8 py-4 bg-nitro-charcoal rounded-lg border border-nitro-green/20">
-              <div className="w-2 h-2 bg-nitro-green rounded-full mr-3 animate-pulse"></div>
-              <Typography variant="h4" className="text-nitro-green font-medium">
-                Redefining proactive respiratory care
-              </Typography>
-            </div>
+            <Typography variant="hero" className="leading-tight">
+              AirlyWarning
+            </Typography>
           </motion.div>
 
           {/* Scroll Indicator */}

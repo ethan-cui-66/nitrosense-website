@@ -11,7 +11,6 @@ interface Mount {
   description: string
   benefits: string[]
   idealFor: string
-  icon: string
   image: string
 }
 
@@ -27,7 +26,7 @@ const mounts: Mount[] = [
       'Adjustable chain length'
     ],
     idealFor: 'Daily wear, professional settings, social occasions',
-    icon: '📿',
+    
     image: '/images/necklace-mount.svg'
   },
   {
@@ -41,7 +40,7 @@ const mounts: Mount[] = [
       'Easy to check status'
     ],
     idealFor: 'Active lifestyles, sports, fitness activities',
-    icon: '⌚',
+   
     image: '/images/wristband-mount.svg'
   },
   {
@@ -55,7 +54,7 @@ const mounts: Mount[] = [
       'Hypoallergenic materials'
     ],
     idealFor: 'Clinical monitoring, sleep studies, high-risk periods',
-    icon: '🩹',
+   
     image: '/images/patch-mount.svg'
   }
 ]

@@ -9,44 +9,44 @@ const beneficiaries = [
   {
     type: 'patients',
     title: 'Patients',
-    icon: '🫁',
+    
     benefits: [
       'Prevent attacks before symptoms appear',
-      'Reduce emergency room visits by up to 70%',
-      'Live with confidence, not fear',
-      'Maintain active lifestyle without restrictions',
-      'Better sleep knowing you\'re protected',
-      'Personalized insights about your triggers'
+      'Reduce emergency visits by 70%',
+      'Live with confidence',
+      'Maintain active lifestyle',
+      'Better sleep',
+      'Personalized trigger insights'
     ],
     quote: '"For the first time in years, I can exercise without worrying about an attack."',
     quoteName: 'Sarah M., Beta Tester'
   },
   {
     type: 'caregivers',
-    title: 'Caregivers & Families',
-    icon: '👨‍👩‍👧‍👦',
+    title: 'Caregivers',
+    
     benefits: [
-      'Peace of mind when loved ones are away',
-      'Real-time alerts about respiratory status',
-      'Shared data with healthcare providers',
-      'Reduced anxiety about unexpected attacks',
-      'Better understanding of asthma patterns',
-      'Ability to help prevent attacks proactively'
+      'Peace of mind',
+      'Real-time alerts',
+      'Shared data with providers',
+      'Reduced anxiety',
+      'Pattern understanding',
+      'Proactive prevention'
     ],
     quote: '"I finally sleep through the night knowing the system is watching over my daughter."',
     quoteName: 'Michael R., Parent'
   },
   {
     type: 'clinicians',
-    title: 'Clinicians & Healthcare Providers',
-    icon: '👩‍⚕️',
+    title: 'Clinicians',
+    
     benefits: [
-      'Objective data for better treatment decisions',
-      'Early intervention opportunities',
-      'Reduced hospital readmissions',
-      'Improved patient outcomes and satisfaction',
-      'Evidence-based medication adjustments',
-      'Population health insights and trends'
+      'Objective data for decisions',
+      'Early intervention',
+      'Reduced readmissions',
+      'Improved outcomes',
+      'Evidence-based adjustments',
+      'Population health insights'
     ],
     quote: '"This data transforms how we manage asthma - from reactive to truly predictive care."',
     quoteName: 'Dr. Jennifer L., Pulmonologist'
@@ -57,25 +57,25 @@ const feasibilityFactors = [
   {
     title: 'Advanced Sensor Technology',
     description: 'Miniaturized sensors now capable of detecting ppb-level biomarkers',
-    icon: '🔬',
+    
     status: 'Available Today'
   },
   {
     title: 'AI & Machine Learning',
     description: 'Proven algorithms for pattern recognition in medical applications',
-    icon: '🧠',
+    
     status: 'Mature Technology'
   },
   {
     title: 'Wireless Connectivity',
     description: 'Bluetooth Low Energy enables seamless data transmission',
-    icon: '📡',
+    
     status: 'Industry Standard'
   },
   {
     title: 'Mobile Computing Power',
     description: 'Smartphones now have sufficient processing power for real-time analysis',
-    icon: '📱',
+    
     status: 'Ubiquitous'
   }
 ]
@@ -117,10 +117,7 @@ export default function Impact() {
             className="text-center mb-16"
           >
             <Typography variant="h1" className="mb-6">
-              Impact & Feasibility
-            </Typography>
-            <Typography variant="h3" color="secondary" className="max-w-3xl mx-auto">
-              NitroSense isn&apos;t just technically possible—it&apos;s urgently needed and ready to deploy today.
+              Impact
             </Typography>
           </motion.div>
 
@@ -135,10 +132,6 @@ export default function Impact() {
             <div className="text-center mb-12">
               <Typography variant="h2" className="mb-4">
                 Who Benefits
-              </Typography>
-              <Typography variant="body" color="secondary" className="max-w-2xl mx-auto">
-                NitroSense creates value across the entire healthcare ecosystem, from individual patients 
-                to healthcare systems and society at large.
               </Typography>
             </div>
 
@@ -209,10 +202,7 @@ export default function Impact() {
           >
             <div className="text-center mb-12">
               <Typography variant="h2" className="mb-4">
-                The Power of Early Detection
-              </Typography>
-              <Typography variant="body" color="secondary" className="max-w-3xl mx-auto">
-                Every minute matters in asthma care. Early detection doesn&apos;t just improve outcomes—it saves lives.
+                Early Detection
               </Typography>
             </div>
 
@@ -260,7 +250,7 @@ export default function Impact() {
             <Grid cols={2} gap="lg">
               <div className="bg-nitro-red/10 p-6 rounded-xl border border-nitro-red/20">
                 <Typography variant="h3" className="mb-4 text-nitro-red">
-                  ❌ Traditional Wearables
+                  Traditional Wearables
                 </Typography>
                 <ul className="space-y-2 text-nitro-text-secondary">
                   <li>• One-size-fits-all design</li>
@@ -273,7 +263,7 @@ export default function Impact() {
 
               <div className="bg-nitro-green/10 p-6 rounded-xl border border-nitro-green/20">
                 <Typography variant="h3" className="mb-4 text-nitro-green">
-                  ✅ NitroSense Modular Design
+                  NitroSense Modular Design
                 </Typography>
                 <ul className="space-y-2 text-nitro-text-secondary">
                   <li>• Multiple wearing options</li>

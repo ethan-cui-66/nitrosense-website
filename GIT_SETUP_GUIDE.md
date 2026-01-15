@@ -92,18 +92,18 @@ git push -u origin main
 ## What Files Are Included
 
 The repository will include:
-- ✅ All source code (`src/` directory)
-- ✅ Configuration files (package.json, next.config.js, etc.)
-- ✅ Tests (`src/__tests__/` directory)
-- ✅ Documentation (README.md)
-- ✅ Deployment configuration (vercel.json)
+- All source code (`src/` directory)
+- Configuration files (package.json, next.config.js, etc.)
+- Tests (`src/__tests__/` directory)
+- Documentation (README.md)
+- Deployment configuration (vercel.json)
 
 The repository will **NOT** include:
-- ❌ `node_modules/` (dependencies)
-- ❌ `.next/` (build files)
-- ❌ `out/` (export files)
-- ❌ IDE files (.vscode, .idea)
-- ❌ OS files (.DS_Store, Thumbs.db)
+- `node_modules/` (dependencies)
+- `.next/` (build files)
+- `out/` (export files)
+- IDE files (.vscode, .idea)
+- OS files (.DS_Store, Thumbs.db)
 
 ## Troubleshooting
 
