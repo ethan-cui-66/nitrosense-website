@@ -2,7 +2,7 @@ import * as fc from 'fast-check'
 import { ContentParser, contentParser } from '@/utils/contentParser'
 import { PrettyPrinter, prettyPrinter } from '@/utils/prettyPrinter'
 
-// Feature: nitrosense-website, Property 10: Content Round-Trip Integrity
+// Feature: Airly Warning-website, Property 10: Content Round-Trip Integrity
 describe('Content Round-Trip Integrity', () => {
   test('should maintain content equivalence through parse-print-parse cycle', () => {
     fc.assert(

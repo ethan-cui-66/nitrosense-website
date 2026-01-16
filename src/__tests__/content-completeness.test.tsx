@@ -2,7 +2,7 @@ import * as fc from 'fast-check'
 import { render } from '@/utils/test-utils'
 import Story from '@/components/Story'
 
-// Feature: nitrosense-website, Property 5: Required Content Completeness (partial - values section)
+// Feature: Airly Warning-website, Property 5: Required Content Completeness (partial - values section)
 describe('Required Content Completeness - Values Section', () => {
   test('should include all four specified core values', () => {
     fc.assert(
@@ -200,7 +200,7 @@ describe('Required Content Completeness - Values Section', () => {
 })
 import Model from '@/components/Model'
 
-// Feature: nitrosense-website, Property 5: Required Content Completeness (sensor measurements and mount types)
+// Feature: Airly Warning-website, Property 5: Required Content Completeness (sensor measurements and mount types)
 describe('Required Content Completeness - Technical Content', () => {
   test('should include all three sensor measurement types', () => {
     fc.assert(
@@ -446,7 +446,7 @@ describe('Required Content Completeness - Technical Content', () => {
 })
 import Impact from '@/components/Impact'
 
-// Feature: nitrosense-website, Property 5: Required Content Completeness (beneficiary types)
+// Feature: Airly Warning-website, Property 5: Required Content Completeness (beneficiary types)
 describe('Required Content Completeness - Beneficiary Types', () => {
   test('should include all three beneficiary types', () => {
     fc.assert(
@@ -571,7 +571,7 @@ describe('Required Content Completeness - Beneficiary Types', () => {
           
           // Should contrast traditional vs modular approaches
           expect(content).toContain('Traditional Wearables')
-          expect(content).toContain('NitroSense Modular Design')
+          expect(content).toContain('Airly Warning Modular Design')
           
           // Should highlight adoption benefits
           expect(content.toLowerCase()).toContain('multiple wearing options')

@@ -36,9 +36,9 @@ describe('Integration Tests - Complete User Journey', () => {
     render(<Home />)
     
     // Verify all main sections are present
-    expect(screen.getByText(/NitroSense prevents asthma attacks/i)).toBeInTheDocument()
+    expect(screen.getByText(/Airly Warning prevents asthma attacks/i)).toBeInTheDocument()
     expect(screen.getByText(/Our Mission/i)).toBeInTheDocument()
-    expect(screen.getByText(/The NitroSense System/i)).toBeInTheDocument()
+    expect(screen.getByText(/The Airly Warning System/i)).toBeInTheDocument()
     expect(screen.getByText(/Impact & Feasibility/i)).toBeInTheDocument()
     expect(screen.getByText(/Brand Identity/i)).toBeInTheDocument()
   })
@@ -128,19 +128,19 @@ describe('Integration Tests - Complete User Journey', () => {
     fireEvent(window, new Event('resize'))
     
     // Check that content is still accessible
-    expect(screen.getByText(/NitroSense prevents asthma attacks/i)).toBeInTheDocument()
+    expect(screen.getByText(/Airly Warning prevents asthma attacks/i)).toBeInTheDocument()
     
     // Test tablet viewport
     Object.defineProperty(window, 'innerWidth', { value: 768, writable: true })
     fireEvent(window, new Event('resize'))
     
-    expect(screen.getByText(/NitroSense prevents asthma attacks/i)).toBeInTheDocument()
+    expect(screen.getByText(/Airly Warning prevents asthma attacks/i)).toBeInTheDocument()
     
     // Test desktop viewport
     Object.defineProperty(window, 'innerWidth', { value: 1024, writable: true })
     fireEvent(window, new Event('resize'))
     
-    expect(screen.getByText(/NitroSense prevents asthma attacks/i)).toBeInTheDocument()
+    expect(screen.getByText(/Airly Warning prevents asthma attacks/i)).toBeInTheDocument()
   })
 
   test('all content is competition-ready with no placeholders', () => {
@@ -157,8 +157,8 @@ describe('Integration Tests - Complete User Journey', () => {
     // Ensure substantial content
     expect(textContent.length).toBeGreaterThan(1000)
     
-    // Check for required NitroSense content
-    expect(textContent).toMatch(/nitrosense/gi)
+    // Check for required Airly Warning content
+    expect(textContent).toMatch(/Airly Warning/gi)
     expect(textContent).toMatch(/asthma/gi)
     expect(textContent).toMatch(/respiratory/gi)
     expect(textContent).toMatch(/sensor/gi)
@@ -193,7 +193,7 @@ describe('Integration Tests - Complete User Journey', () => {
     const { container } = render(<Home />)
     
     // Should still render content properly with reduced motion
-    expect(screen.getByText(/NitroSense prevents asthma attacks/i)).toBeInTheDocument()
+    expect(screen.getByText(/Airly Warning prevents asthma attacks/i)).toBeInTheDocument()
   })
 
   test('keyboard navigation works properly', () => {

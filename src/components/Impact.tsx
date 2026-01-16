@@ -262,7 +262,7 @@ export default function Impact() {
 
               <div className="bg-nitro-green/10 p-6 rounded-xl border border-nitro-green/20">
                 <Typography variant="h3" className="mb-4 text-nitro-green">
-                  NitroSense Modular Design
+                  Airly Warning Modular Design
                 </Typography>
                 <ul className="space-y-2 text-nitro-text-secondary">
                   <li>• Multiple wearing options</li>

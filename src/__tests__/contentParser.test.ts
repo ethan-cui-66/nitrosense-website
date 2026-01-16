@@ -1,7 +1,7 @@
 import * as fc from 'fast-check'
 import { ContentParser, contentParser } from '@/utils/contentParser'
 
-// Feature: nitrosense-website, Property 8: Content Parser Validation
+// Feature: Airly Warning-website, Property 8: Content Parser Validation
 describe('Content Parser Validation', () => {
   test('should validate content against brand guidelines for any input', () => {
     fc.assert(

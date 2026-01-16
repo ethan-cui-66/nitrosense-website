@@ -1,10 +1,10 @@
-# NitroSense Website
+# Airly Warning Website
 
-A competition-ready website for NitroSense, a medical innovation that prevents asthma attacks through continuous, predictive respiratory monitoring.
+A competition-ready website for Airly Warning, a medical innovation that prevents asthma attacks through continuous, predictive respiratory monitoring.
 
 ## Overview
 
-This website showcases the NitroSense system with a focus on medical professionalism, scientific accuracy, and accessibility. Built with Next.js 14, TypeScript, and Tailwind CSS, it features a dark medical aesthetic with comprehensive testing and performance optimization.
+This website showcases the Airly Warning system with a focus on medical professionalism, scientific accuracy, and accessibility. Built with Next.js 14, TypeScript, and Tailwind CSS, it features a dark medical aesthetic with comprehensive testing and performance optimization.
 
 ## Features
 

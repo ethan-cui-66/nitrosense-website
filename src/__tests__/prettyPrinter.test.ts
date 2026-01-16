@@ -1,7 +1,7 @@
 import * as fc from 'fast-check'
 import { PrettyPrinter, prettyPrinter, formatHTML } from '@/utils/prettyPrinter'
 
-// Feature: nitrosense-website, Property 9: Markup Formatting Consistency
+// Feature: Airly Warning-website, Property 9: Markup Formatting Consistency
 describe('Markup Formatting Consistency', () => {
   test('should produce valid HTML5 markup with consistent indentation', () => {
     fc.assert(

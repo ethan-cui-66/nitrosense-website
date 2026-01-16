@@ -2,11 +2,11 @@ import { render, screen } from '@/utils/test-utils'
 import Hero from '@/components/Hero'
 
 describe('Hero Component', () => {
-  test('renders NitroSense introduction in one sentence', () => {
+  test('renders Airly Warning introduction in one sentence', () => {
     render(<Hero />)
     
     // Check for the main introduction sentence
-    const introduction = screen.getByText(/NitroSense prevents asthma attacks before they happen through continuous, predictive respiratory monitoring/i)
+    const introduction = screen.getByText(/Airly Warning prevents asthma attacks before they happen through continuous, predictive respiratory monitoring/i)
     expect(introduction).toBeInTheDocument()
     
     // Verify it's a single sentence (ends with period)
@@ -60,7 +60,7 @@ describe('Hero Component', () => {
     // Should have proper heading hierarchy
     const mainHeading = screen.getByRole('heading', { level: 1 })
     expect(mainHeading).toBeInTheDocument()
-    expect(mainHeading).toHaveTextContent(/NitroSense prevents asthma attacks/)
+    expect(mainHeading).toHaveTextContent(/Airly Warning prevents asthma attacks/)
   })
 
   test('is accessible with proper ARIA labels', () => {
@@ -71,7 +71,7 @@ describe('Hero Component', () => {
     expect(heroSection).toBeInTheDocument()
     
     // Text should have proper contrast (tested in accessibility tests)
-    const mainText = screen.getByText(/NitroSense prevents asthma attacks/i)
+    const mainText = screen.getByText(/Airly Warning prevents asthma attacks/i)
     expect(mainText).toHaveClass('text-nitro-text') // High contrast text
   })
 
@@ -105,7 +105,7 @@ describe('Hero Component', () => {
     render(<Hero />)
     
     // Component should still render properly with reduced motion
-    expect(screen.getByText(/NitroSense prevents asthma attacks/i)).toBeInTheDocument()
+    expect(screen.getByText(/Airly Warning prevents asthma attacks/i)).toBeInTheDocument()
     expect(screen.getByText(/Redefining proactive respiratory care/i)).toBeInTheDocument()
   })
 

@@ -37,7 +37,7 @@ export function LoadingPage() {
     <div className="min-h-screen bg-nitro-black flex items-center justify-center">
       <div className="text-center">
         <LoadingSpinner size="lg" className="mb-4" />
-        <p className="text-nitro-gray-300">Loading NitroSense...</p>
+        <p className="text-nitro-gray-300">Loading Airly Warning...</p>
       </div>
     </div>
   )

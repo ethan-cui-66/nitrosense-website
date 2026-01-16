@@ -2,7 +2,7 @@ import * as fc from 'fast-check'
 import { render } from '@/utils/test-utils'
 import { Container, Grid, Flex, Responsive } from '@/components/ui/Layout'
 
-// Feature: nitrosense-website, Property 4: Responsive Layout Behavior
+// Feature: Airly Warning-website, Property 4: Responsive Layout Behavior
 describe('Responsive Layout Behavior', () => {
   test('should maintain readable content across all viewport widths', () => {
     fc.assert(

@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#10B981', // nitro-green
   colorScheme: 'dark',
-  authors: [{ name: 'NitroSense Team' }],
-  creator: 'NitroSense',
-  publisher: 'NitroSense',
+  authors: [{ name: 'Airly Warning Team' }],
+  creator: 'Airly Warning',
+  publisher: 'Airly Warning',
   formatDetection: {
     email: false,
     address: false,

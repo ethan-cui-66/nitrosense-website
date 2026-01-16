@@ -88,7 +88,7 @@ export default function DataFlow() {
           From Data to Prediction
         </Typography>
         <Typography variant="body" color="secondary" className="max-w-3xl mx-auto">
-          See how NitroSense transforms continuous breath monitoring into life-saving predictions 
+          See how Airly Warning transforms continuous breath monitoring into life-saving predictions 
           through advanced AI and machine learning.
         </Typography>
       </div>
@@ -225,7 +225,7 @@ export default function DataFlow() {
         <div className="bg-nitro-green/10 p-6 rounded-xl border border-nitro-green/20">
           <Typography variant="h3" className="mb-4 text-nitro-green flex items-center">
             <span className="mr-2">🎯</span>
-            NitroSense Predictive Approach
+            Airly Warning Predictive Approach
           </Typography>
           <ul className="space-y-2 text-nitro-text-secondary">
             <li>• Biomarkers detected early</li>

@@ -1,4 +1,4 @@
-// NitroSense Design System Tokens
+// Airly Warning Design System Tokens
 export const colors = {
   // Primary backgrounds
   black: '#0A0A0B',

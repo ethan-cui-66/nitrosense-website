@@ -109,7 +109,7 @@ export default function Model() {
                 Why This Changes Everything
               </Typography>
               <Typography variant="body" color="secondary" className="max-w-2xl mx-auto">
-                Traditional asthma management is reactive. NitroSense is predictive.
+                Traditional asthma management is reactive. Airly Warning is predictive.
               </Typography>
             </div>
 
@@ -129,7 +129,7 @@ export default function Model() {
 
               <div className="bg-nitro-green/10 p-8 rounded-xl border border-nitro-green/20">
                 <Typography variant="h3" className="mb-4 text-nitro-green">
-                  NitroSense Approach
+                  Airly Warning Approach
                 </Typography>
                 <ul className="space-y-3 text-nitro-text-secondary">
                   <li>• Continuous biomarker monitoring</li>
@@ -186,7 +186,7 @@ function SensorStoneVisualization() {
           Advanced Sensor Technology
         </Typography>
         <Typography variant="body" color="secondary" className="mb-8 leading-relaxed">
-          The NitroSense sensor stone continuously analyzes your breath for three critical biomarkers 
+          The Airly Warning sensor stone continuously analyzes your breath for three critical biomarkers 
           that indicate respiratory health changes before symptoms appear.
         </Typography>
 

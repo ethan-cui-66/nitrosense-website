@@ -66,7 +66,7 @@ export default function Story() {
               patients wait for symptoms to appear, then respond with rescue medications.
             </Typography>
             <Typography variant="body" className="text-lg leading-relaxed text-center">
-              NitroSense changes this equation entirely. By continuously monitoring the biomarkers that precede asthma 
+              Airly Warning changes this equation entirely. By continuously monitoring the biomarkers that precede asthma 
               attacks, we give patients and caregivers the gift of time—time to take preventive action, time to adjust 
               medications, time to avoid triggers, and time to live without fear.
             </Typography>

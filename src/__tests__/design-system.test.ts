@@ -1,7 +1,7 @@
 import * as fc from 'fast-check'
 import { colors } from '@/styles/design-tokens'
 
-// Feature: nitrosense-website, Property 1: Dark Mode Color System Consistency
+// Feature: Airly Warning-website, Property 1: Dark Mode Color System Consistency
 describe('Color System Consistency', () => {
   test('should maintain dark mode color system across all theme states', () => {
     fc.assert(

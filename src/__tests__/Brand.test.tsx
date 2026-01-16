@@ -6,7 +6,7 @@ describe('Brand Component', () => {
     render(<Brand />)
     
     // Should have name explanation section
-    expect(screen.getByText('The Name: NitroSense')).toBeInTheDocument()
+    expect(screen.getByText('The Name: Airly Warning')).toBeInTheDocument()
     
     // Should explain "Nitro" component
     expect(screen.getByText('Nitro')).toBeInTheDocument()
@@ -26,7 +26,7 @@ describe('Brand Component', () => {
     
     // Should have logo concept/placeholder
     expect(screen.getByText('NS')).toBeInTheDocument() // Logo initials
-    expect(screen.getByText('NITROSENSE')).toBeInTheDocument() // Brand name
+    expect(screen.getByText('Airly Warning')).toBeInTheDocument() // Brand name
     expect(screen.getByText(/Logo Concept.*Breathing rhythm/i)).toBeInTheDocument()
     
     // Should have visual logo representation
@@ -212,7 +212,7 @@ describe('Brand Component', () => {
     
     // Component should still render properly with reduced motion
     expect(screen.getByText('Brand Identity')).toBeInTheDocument()
-    expect(screen.getByText('The Name: NitroSense')).toBeInTheDocument()
+    expect(screen.getByText('The Name: Airly Warning')).toBeInTheDocument()
     expect(screen.getByText('Brand Voice: Clinical Yet Human')).toBeInTheDocument()
   })
 })

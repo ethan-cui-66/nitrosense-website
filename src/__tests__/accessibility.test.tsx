@@ -3,7 +3,7 @@ import { render } from '@/utils/test-utils'
 import { Typography } from '@/components/ui/Typography'
 import { colors } from '@/styles/design-tokens'
 
-// Feature: nitrosense-website, Property 3: Accessibility Contrast Standards
+// Feature: Airly Warning-website, Property 3: Accessibility Contrast Standards
 describe('Accessibility Contrast Standards', () => {
   // Helper function to calculate luminance
   const calculateLuminance = (hex: string): number => {

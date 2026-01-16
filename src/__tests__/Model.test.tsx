@@ -89,14 +89,14 @@ describe('Model Component', () => {
     
     // Should show comparison between approaches
     expect(screen.getByText(/Traditional Approach/i)).toBeInTheDocument()
-    expect(screen.getByText(/NitroSense Approach/i)).toBeInTheDocument()
+    expect(screen.getByText(/Airly Warning Approach/i)).toBeInTheDocument()
     
     // Traditional approach should mention reactive elements
     expect(screen.getByText(/Wait for symptoms/i)).toBeInTheDocument()
     expect(screen.getByText(/rescue medications/i)).toBeInTheDocument()
     expect(screen.getByText(/Emergency room visits/i)).toBeInTheDocument()
     
-    // NitroSense approach should emphasize prediction
+    // Airly Warning approach should emphasize prediction
     expect(screen.getByText(/Continuous biomarker monitoring/i)).toBeInTheDocument()
     expect(screen.getByText(/Predict attacks before symptoms/i)).toBeInTheDocument()
     expect(screen.getByText(/Preventive action/i)).toBeInTheDocument()

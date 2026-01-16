@@ -46,7 +46,7 @@ describe('Impact Component', () => {
     
     // Should contrast traditional vs modular approaches
     expect(screen.getByText('Traditional Wearables')).toBeInTheDocument()
-    expect(screen.getByText('NitroSense Modular Design')).toBeInTheDocument()
+    expect(screen.getByText('Airly Warning Modular Design')).toBeInTheDocument()
     
     // Should highlight modular advantages
     expect(screen.getByText(/Multiple wearing options/i)).toBeInTheDocument()
@@ -169,7 +169,7 @@ describe('Impact Component', () => {
     
     // Should have comparison tables
     expect(screen.getByText('Traditional Wearables')).toBeInTheDocument()
-    expect(screen.getByText('NitroSense Modular Design')).toBeInTheDocument()
+    expect(screen.getByText('Airly Warning Modular Design')).toBeInTheDocument()
   })
 
   test('respects animation preferences', () => {

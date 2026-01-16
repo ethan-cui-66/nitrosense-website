@@ -3,7 +3,7 @@ import { render } from '@/utils/test-utils'
 import { Typography, CodeText, TechnicalText } from '@/components/ui/Typography'
 import { typography } from '@/styles/design-tokens'
 
-// Feature: nitrosense-website, Property 2: Typography System Compliance
+// Feature: Airly Warning-website, Property 2: Typography System Compliance
 describe('Typography System Compliance', () => {
   test('should use clinical font families without playful fonts', () => {
     fc.assert(

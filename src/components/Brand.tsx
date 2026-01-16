@@ -92,7 +92,7 @@ export default function Brand() {
           >
             <div className="text-center mb-12">
               <Typography variant="h2" className="mb-4">
-                NitroSense
+                Airly Warning
               </Typography>
             </div>
 
@@ -101,20 +101,21 @@ export default function Brand() {
                 <div>
                   <div className="mb-8">
                     <Typography variant="h3" className="mb-4 text-nitro-green">
-                      <TechnicalText>Nitro</TechnicalText>
+                      <TechnicalText>Airly</TechnicalText>
                     </Typography>
                     <Typography variant="body" color="secondary" className="leading-relaxed">
-                      Nitric Oxide (NO) - the key biomarker we measure. FeNO indicates airway inflammation 
-                      and predicts asthma attacks.
+                      Represents airway monitoring and the breath analysis technology at the core of our system. 
+                      Clean, accessible, and focused on respiratory health.
                     </Typography>
                   </div>
                   
                   <div>
                     <Typography variant="h3" className="mb-4 text-nitro-green">
-                      <TechnicalText>Sense</TechnicalText>
+                      <TechnicalText>Warning</TechnicalText>
                     </Typography>
                     <Typography variant="body" color="secondary" className="leading-relaxed">
-                      Advanced sensing technology and intuitive insights. Security and awareness from predictive monitoring.
+                      Early warning system that predicts asthma attacks before symptoms appear. Proactive alerts 
+                      that give patients time to take preventive action.
                     </Typography>
                   </div>
                 </div>
@@ -125,11 +126,11 @@ export default function Brand() {
                     <div className="w-48 h-48 mx-auto bg-gradient-to-br from-nitro-green/20 to-nitro-green/5 rounded-full border-2 border-nitro-green/30 flex items-center justify-center">
                       <div className="text-center">
                         <Typography variant="h1" className="text-nitro-green font-bold mb-2">
-                          NS
+                          AW
                         </Typography>
                         <div className="w-16 h-1 bg-nitro-green mx-auto rounded-full"></div>
                         <Typography variant="small" color="secondary" className="mt-2 font-mono">
-                          NITROSENSE
+                          AIRLY WARNING
                         </Typography>
                       </div>
                     </div>
@@ -287,14 +288,14 @@ export default function Brand() {
                 Brand Promise
               </Typography>
               <Typography variant="body" className="text-lg text-center leading-relaxed max-w-4xl mx-auto">
-                NitroSense transforms the anxiety of living with asthma into the confidence of predictive health management. 
+                Airly Warning transforms the anxiety of living with asthma into the confidence of predictive health management. 
                 We don&apos;t just monitor—we protect. We don&apos;t just alert—we prevent. We don&apos;t just treat patients—we empower people 
                 to live their fullest lives, breathing freely with the knowledge that advanced science is quietly watching over them.
               </Typography>
               
               <div className="mt-8 text-center">
                 <Typography variant="h3" className="text-nitro-green italic">
-                  "                  &ldquo;Breathe freely. Live fully. We&apos;ve got you covered.&rdquo;"
+                  "                  &ldquo;Your body warns you twice, we listen both times.&ldquo;"
                 </Typography>
               </div>
             </div>

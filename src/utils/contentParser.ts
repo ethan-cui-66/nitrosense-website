@@ -1,4 +1,4 @@
-// Content Parser with Brand Validation for NitroSense Website
+// Content Parser with Brand Validation for Airly Warning Website
 
 export interface ContentValidationResult {
   isValid: boolean
@@ -74,7 +74,7 @@ export class ContentParser {
   }
 
   /**
-   * Validates content against NitroSense brand guidelines
+   * Validates content against Airly Warning brand guidelines
    */
   validateContent(content: string): ContentValidationResult {
     const errors: string[] = []

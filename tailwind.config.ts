@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // NitroSense Brand Colors
+        // Airly Warning Brand Colors
         'nitro-black': '#0A0A0B',
         'nitro-charcoal': '#1A1A1C',
         'nitro-green': '#00D4AA',

@@ -1,4 +1,4 @@
-// Semantic HTML Structure Validator for NitroSense Website
+// Semantic HTML Structure Validator for Airly Warning Website
 
 export interface SemanticValidationResult {
   isValid: boolean

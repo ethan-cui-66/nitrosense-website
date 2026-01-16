@@ -45,7 +45,7 @@ const HYPE_PATTERNS = [
 // Required content patterns for competition readiness
 const REQUIRED_CONTENT_PATTERNS = {
   hero: [
-    /nitrosense/gi,
+    /Airly Warning/gi,
     /asthma/gi,
     /prevent/gi,
     /respiratory/gi,
