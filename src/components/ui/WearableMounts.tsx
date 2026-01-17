@@ -6,7 +6,7 @@ import { Typography } from '@/components/ui/Typography'
 import SensorStone from '@/components/ui/SensorStone'
 
 interface Mount {
-  id: 'necklace' | 'wristband' | 'patch'
+  id: 'patch' | 'breathalyzer'
   name: string
   description: string
   benefits: string[]
@@ -16,62 +16,48 @@ interface Mount {
 
 const mounts: Mount[] = [
   {
-    id: 'necklace',
-    name: 'Necklace Mount',
-    description: 'Elegant pendant design that positions the sensor stone close to your breathing zone for optimal data collection.',
-    benefits: [
-      'Closest to respiratory system',
-      'Fashionable and discreet',
-      'No interference with daily activities',
-      'Adjustable chain length'
-    ],
-    idealFor: 'Daily wear, professional settings, social occasions',
-    
-    image: '/images/necklace-mount.svg'
-  },
-  {
-    id: 'wristband',
-    name: 'Wristband Mount',
-    description: 'Comfortable silicone band that integrates the sensor stone into a familiar smartwatch-style form factor.',
-    benefits: [
-      'Familiar smartwatch design',
-      'Secure and comfortable fit',
-      'Water-resistant construction',
-      'Easy to check status'
-    ],
-    idealFor: 'Active lifestyles, sports, fitness activities',
-   
-    image: '/images/wristband-mount.svg'
-  },
-  {
     id: 'patch',
-    name: 'Skin Patch',
-    description: 'Medical-grade adhesive patch that provides the most direct contact with your body for maximum sensitivity.',
+    name: 'Chest Patch',
+    description: 'Medical-grade adhesive patch that provides direct contact with your chest for continuous respiratory monitoring.',
     benefits: [
       'Maximum sensor sensitivity',
       'Medical-grade adhesive',
       'Completely invisible under clothing',
       'Hypoallergenic materials'
     ],
-    idealFor: 'Clinical monitoring, sleep studies, high-risk periods',
+    idealFor: 'Continuous monitoring, sleep studies, high-risk periods',
    
     image: '/images/patch-mount.svg'
+  },
+  {
+    id: 'breathalyzer',
+    name: 'Breathalyzer',
+    description: 'Portable handheld device for on-demand breath analysis. Perfect for spot-checks and periodic monitoring.',
+    benefits: [
+      'Instant breath analysis',
+      'Portable and convenient',
+      'No wearable required',
+      'Medical-grade accuracy'
+    ],
+    idealFor: 'Spot-checks, travel, periodic monitoring',
+    
+    image: '/images/breathalyzer-mount.svg'
   }
 ]
 
 export default function WearableMounts() {
-  const [selectedMount, setSelectedMount] = useState<Mount['id']>('necklace')
+  const [selectedMount, setSelectedMount] = useState<Mount['id']>('patch')
   const activeMount = mounts.find(mount => mount.id === selectedMount)!
 
   return (
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
         <Typography variant="h2" className="mb-4">
-          Flexible Wearable Options
+          Two Monitoring Options
         </Typography>
         <Typography variant="body" color="secondary" className="max-w-2xl mx-auto">
-          Choose the mounting option that best fits your lifestyle. The same advanced sensor technology 
-          works seamlessly across all form factors.
+          Choose between continuous monitoring with the chest patch or on-demand analysis with the breathalyzer. 
+          Both use the same advanced sensor technology.
         </Typography>
       </div>
 
@@ -196,12 +182,12 @@ export default function WearableMounts() {
       >
         <div className="bg-gradient-to-r from-nitro-green/5 to-nitro-green/10 p-8 rounded-2xl border border-nitro-green/20">
           <Typography variant="h3" className="mb-4 text-nitro-green">
-            Modular Design Advantage
+            Flexible Monitoring Approach
           </Typography>
           <Typography variant="body" className="max-w-3xl mx-auto leading-relaxed">
-            The same sensor stone works across all mounting options. Start with one style and easily switch 
-            to another based on your activities, preferences, or medical needs. No need to buy separate devices 
-            or lose your health data history.
+            Use the chest patch for continuous 24/7 monitoring during high-risk periods, or switch to the breathalyzer 
+            for convenient spot-checks throughout your day. Both devices sync to the same app and maintain your complete 
+            health data history.
           </Typography>
         </div>
       </motion.div>
@@ -213,48 +199,14 @@ export default function WearableMounts() {
 function MountIllustration({ mount }: { mount: Mount }) {
   return (
     <div className="relative w-80 h-80 mx-auto">
-      {mount.id === 'necklace' && (
-        <div className="relative w-full h-full">
-          {/* Necklace Chain */}
-          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 320 320">
-            <path
-              d="M160 50 Q120 80 100 120 Q90 140 90 160 Q90 180 100 200 Q120 240 160 270 Q200 240 220 200 Q230 180 230 160 Q230 140 220 120 Q200 80 160 50"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              className="text-nitro-green/60"
-            />
-          </svg>
-          {/* Pendant with Sensor */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <SensorStone size="md" showMeasurements={false} />
-          </div>
-        </div>
-      )}
-
-      {mount.id === 'wristband' && (
-        <div className="relative w-full h-full flex items-center justify-center">
-          {/* Wristband */}
-          <div className="relative">
-            <div className="w-48 h-32 border-4 border-nitro-green/60 rounded-full"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <SensorStone size="sm" showMeasurements={false} />
-            </div>
-            {/* Band Details */}
-            <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-8 h-4 bg-nitro-charcoal rounded"></div>
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-4 bg-nitro-charcoal rounded"></div>
-          </div>
-        </div>
-      )}
-
       {mount.id === 'patch' && (
         <div className="relative w-full h-full flex items-center justify-center">
-          {/* Skin Patch */}
+          {/* Chest Patch */}
           <div className="relative">
-            <div className="w-32 h-32 bg-nitro-charcoal/30 rounded-2xl border-2 border-nitro-green/40 border-dashed">
+            <div className="w-40 h-40 bg-nitro-charcoal/30 rounded-2xl border-2 border-nitro-green/40 border-dashed">
               <div className="absolute inset-4 bg-nitro-green/10 rounded-xl"></div>
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <SensorStone size="sm" showMeasurements={false} />
+                <SensorStone size="md" showMeasurements={false} />
               </div>
             </div>
             {/* Adhesive Indicators */}
@@ -262,6 +214,27 @@ function MountIllustration({ mount }: { mount: Mount }) {
             <div className="absolute -top-1 -right-1 w-4 h-4 bg-nitro-yellow/60 rounded-full"></div>
             <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-nitro-yellow/60 rounded-full"></div>
             <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-nitro-yellow/60 rounded-full"></div>
+          </div>
+        </div>
+      )}
+
+      {mount.id === 'breathalyzer' && (
+        <div className="relative w-full h-full flex items-center justify-center">
+          {/* Breathalyzer Device */}
+          <div className="relative">
+            {/* Device Body */}
+            <div className="w-32 h-48 bg-nitro-charcoal border-2 border-nitro-green/60 rounded-2xl relative">
+              {/* Screen */}
+              <div className="absolute top-4 left-4 right-4 h-20 bg-nitro-black rounded-lg border border-nitro-green/40 flex items-center justify-center">
+                <SensorStone size="sm" showMeasurements={false} />
+              </div>
+              {/* Mouthpiece */}
+              <div className="absolute -right-8 top-1/2 transform -translate-y-1/2 w-12 h-8 bg-nitro-charcoal border-2 border-nitro-green/60 rounded-r-full"></div>
+              {/* Button */}
+              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-nitro-green/20 border-2 border-nitro-green rounded-full flex items-center justify-center">
+                <div className="w-6 h-6 bg-nitro-green rounded-full"></div>
+              </div>
+            </div>
           </div>
         </div>
       )}
